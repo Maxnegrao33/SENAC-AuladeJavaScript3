@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Maciel Oliveira">
+    <title>Eventos Mouse</title>
+</head>
+<body>
+    <div id="meuElemento" style="width: 100px; height: 100px; background-color: lightblue;">
+    </div>
+
+
+    <script>
+        const elemento = document.getElementById("meuElemento")
+        
+        
+        elemento.addEventListener("mouseover", function(){
+            elemento.style.backgroundColor = "lightcoral"
+        })
+
+        elemento.addEventListener("mouseout", function(){
+            elemento.style.backgroundColor = "lightblue"
+        })
+
+    </script>
+
+</body>
+</html>
